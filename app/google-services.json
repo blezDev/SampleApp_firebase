@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "416371324448",
+    "firebase_url": "https://fitnytech-cdada-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fitnytech-cdada",
+    "storage_bucket": "fitnytech-cdada.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416371324448:android:78f0422247e023aae5ee45",
+        "android_client_info": {
+          "package_name": "com.blez.fitnytech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "416371324448-dbo5rj87evm5tjdihv7ih7e866gatlbc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blez.fitnytech",
+            "certificate_hash": "f27dda4194f87a7f29c7bdeb2b4ef7c9278a5192"
+          }
+        },
+        {
+          "client_id": "416371324448-qcc5rd32a08hhc7fk63iqr6c12bca43j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6jSyRUYnzjlGrnc5limdfsR92goN2YDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "416371324448-qcc5rd32a08hhc7fk63iqr6c12bca43j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
