@@ -10,6 +10,9 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
+        android:elevation="10dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="50dp"
         android:layout_height="wrap_content">
 
         <ImageView
@@ -29,7 +32,7 @@
             android:id="@+id/usernameText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="24dp"
             android:fontFamily="@font/cinnamon"
             android:text="From Sai"
@@ -53,6 +56,15 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/usernameText" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/postImage" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

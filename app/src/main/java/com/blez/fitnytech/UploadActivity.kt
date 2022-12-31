@@ -44,9 +44,15 @@ class UploadActivity : AppCompatActivity() {
         contract.launch("image/*")
         }
         binding.submitBTN.setOnClickListener {
-            if(binding.editTextTextMultiLine.text.isNullOrEmpty() || uri == Uri.parse("hello")){
-                Toast.makeText(this, "OOPS!!! Check the form before posting", Toast.LENGTH_SHORT).show()
-            }else{
+
+
+            if (uri == Uri.parse("hello")){
+                Toast.makeText(this, "OOPS!!! No Image is Selected !!!", Toast.LENGTH_SHORT).show()
+            }
+           else if(binding.editTextTextMultiLine.text.isNullOrEmpty() ){
+                Toast.makeText(this, "OOPS!!! Fill up the description !!!", Toast.LENGTH_SHORT).show()
+            }
+            else{
             val photoReference = storageReference.child("images/${System.currentTimeMillis()}")
                 photoReference.putFile(uri!!)
                     .continueWithTask {photoUploadTask->
@@ -72,7 +78,7 @@ class UploadActivity : AppCompatActivity() {
                              startActivity(intent)
                              finish()
                          }
-                        
+
                     }
 
             }
